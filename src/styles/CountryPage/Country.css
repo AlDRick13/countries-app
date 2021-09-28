@@ -1,0 +1,22 @@
+.country-container {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border: solid 1px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
+    justify-content: center; 
+       
+}
+
+.country-container img {
+    max-width: 100%;
+}
+
+.country-details{
+    padding-bottom: 20px;
+}

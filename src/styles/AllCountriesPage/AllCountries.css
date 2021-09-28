@@ -1,0 +1,28 @@
+.country-container1 {
+    margin-top: 60px;
+    width: 30%;
+    text-align: center;
+    /* margin: 10px; */
+    border: solid 1px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
+    justify-content: center; 
+    
+}
+
+.nav-all-countries{
+    position:fixed;
+}
+.country-container1 img {
+    max-width: 100%;
+}
+
+.countries-container1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}

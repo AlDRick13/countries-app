@@ -1,0 +1,13 @@
+nav {
+    top: 0;
+    width: 100%;
+    position: static;
+    background-color: #2A0944;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+}
