@@ -33,7 +33,7 @@ const CountryPage = props => {
     
     useEffect (()=>{
         handleFetchCountryData()
-    },)
+    },[])
 
     return (
         <>

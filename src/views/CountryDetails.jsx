@@ -26,7 +26,7 @@ const CountryDetails = () => {
     useEffect(() => {
         fetchDetailsAPI();
         
-    },);
+    },[]);
     console.log(details)
 
     return (
