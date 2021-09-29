@@ -34,7 +34,7 @@ const CountryDetails = () => {
         
             details && details.length>0 && (
         <div className="country-details" >
-            <Link to={`/`}><h3>Go back!</h3> </Link>
+            <Link to={`/`}><h4>Go back!</h4> </Link>
             <CountryInfo name={details[0].name.common} capital={details[0].capital} subregion={details[0].subregion} fullName={details[0].name.official} flag={details[0].flags[0]} />
         </div>
             )

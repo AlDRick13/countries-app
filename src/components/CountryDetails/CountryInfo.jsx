@@ -6,7 +6,7 @@ const CountryInfo = ({name, flag, fullName, capital, subregion}) => {
 
     return (
         <div className="country-container">
-            <h1>{name}</h1>
+            <h2>{name}</h2>
             <img src={flag} alt={name} />
             <hr />
             <p><h3>Capital:</h3> {capital}</p>
