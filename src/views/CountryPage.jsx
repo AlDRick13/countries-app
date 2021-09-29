@@ -4,7 +4,6 @@ import React, {useState, useEffect} from 'react';
 import Country from "../components/CountryPage/Country"
 import SearchForm from "../components/CountryPage/SearchForm";
 import FetchError from "../components/FetchError"
-
 //styles
 const CountryPage = props => {
 
@@ -16,14 +15,14 @@ const CountryPage = props => {
         try {
             const response = await fetch (
                 `https://restcountries.com/v3/name/${name}?fullText=true`
-        );
-        const result = await response.json();
-        if (result.status) {
-            setError(result.message);
-        } else {
-            setCountryData (result);
-            setError(false);
-        }
+            );
+            const result = await response.json();
+            if (result.status) {
+                setError(result.message);
+            } else {
+                setCountryData (result);
+                setError(false);
+            }
             
         } catch (e) {
             console.log(e);          
@@ -34,7 +33,7 @@ const CountryPage = props => {
     
     useEffect (()=>{
         handleFetchCountryData()
-    },[])
+    },)
 
     return (
         <>
