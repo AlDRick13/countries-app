@@ -25,7 +25,8 @@ const CountryDetails = () => {
 
     useEffect(() => {
         fetchDetailsAPI();
-        
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
     console.log(details)
 

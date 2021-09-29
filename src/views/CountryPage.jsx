@@ -33,6 +33,8 @@ const CountryPage = props => {
     
     useEffect (()=>{
         handleFetchCountryData()
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return (
