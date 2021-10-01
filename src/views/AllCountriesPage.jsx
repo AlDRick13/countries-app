@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect} from 'react';
+import { useState, useEffect, useRef} from 'react';
 import {Link} from "react-router-dom";
 import Loader from "../components/Loader";
 
@@ -12,7 +12,8 @@ const AllCountriesPage = () => {
 
     const [data, setData] = useState();
     const [loader, setLoader] = useState(false);
-    
+    const [n, setN] = useState(20);
+    const moreBtnRef = useRef()
 
     //funciones
     const handleFetchCountries = async () => {
@@ -29,29 +30,36 @@ const AllCountriesPage = () => {
         }        
     }
 
+    const handleButtonMore = () => {
+        setN(n + 20)
+    }
+
     useEffect(() =>{
         handleFetchCountries()
 
         //eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
-
+    
     return (
-        <div>
+        <div className="all-countries-container">
             <nav className="nav-all-countries">
-        <Link to={`/`}><h1>COUNTRY SEARCHER!</h1></Link>
-        <span>
-            
+                <Link to={`/`}><h1>COUNTRY SEARCHER!</h1></Link>
+                <span>
+                    
 
-        </span>
-        <Link to={`/`}>Go back!</Link>
+                </span>
+                <Link to={`/`}>Go back!</Link>
 
-    </nav>
-        {loader ? (<Loader/>) : 
-        <div className="countries-container1">
-        {data && data.map(country => <AllCountries key={country.name.common} name={country.name.common} flag={country.flags[0]}/>) }
-
-</div>
+            </nav>
+                {loader ? (<Loader/>) : 
+                <div className="countries-container1">
+                {data && (data.map(country => 
+                <AllCountries key={country.name.common} 
+                name={country.name.common} 
+                flag={country.flags[0]}/>)).splice(0, n) }
+                </div>}
+                {n > 251? <hr/> : <button className="more-button" onClick={() => {handleButtonMore()}}>SHOW MORE COUNTRIES!</button>
 }
         </div>
     );

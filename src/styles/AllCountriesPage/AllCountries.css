@@ -1,8 +1,7 @@
 .country-container1 {
-    margin-top: 60px;
-    width: 30%;
+    width: 200px;
+    margin-top: 20px;
     text-align: center;
-    /* margin: 10px; */
     border: solid 1px;
     padding: 10px;
     background-color: transparent;
@@ -10,6 +9,8 @@
     border-radius: 5px;
     background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
     justify-content: center; 
+    height: 200px;
+    overflow: hidden;
     
 }
 
@@ -17,7 +18,10 @@
     position:fixed;
 }
 .country-container1 img {
-    max-width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+width: 100%;
+   
 }
 
 .countries-container1{
@@ -26,3 +30,71 @@
     padding: 20px;
     justify-content: space-around;
 }
+
+.all-countries-container{
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+
+
+}
+
+.more-button{
+    padding:5px;
+    width: 90%;
+}
+
+/* @media (min-width: 769px){
+    .country-container1 {
+        width: 20%;
+        margin-top: 20px;
+        text-align: center;
+        border: solid 1px;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
+        justify-content: center; 
+        height: 200px;
+        
+    }
+
+}
+
+@media (min-width: 481px){
+    .country-container1 {
+        width:40%;
+        margin-top: 20px;
+        text-align: center;
+        border: solid 1px;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
+        justify-content: center; 
+     
+    
+        height: 200px;
+        
+    }
+    
+    @media (max-width: 320px){
+        .country-container1 {
+            width:40%;
+            margin-top: 20px;
+            text-align: center;
+            border: solid 1px;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            background: linear-gradient(rgba(2555,2555,2555,0),rgba(0,0,0,1));
+            justify-content: center; 
+        
+            height: 200px;
+            
+        }
+    }
+    } */

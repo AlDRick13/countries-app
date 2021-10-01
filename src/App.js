@@ -5,7 +5,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import CountryDetails from "./views/CountryDetails";
 import CountryPage from "./views/CountryPage";
 import AllCountriesPage from "./views/AllCountriesPage";
-
+import WeatherPage from "./views/WeatherPage";
 //styles
 import "./App.css"
 
@@ -20,6 +20,9 @@ function App() {
         </Route>
         <Route path="/details/:country" exact>
           <CountryDetails />
+        </Route>
+        <Route path="/details/:country/weather" exact>
+          <WeatherPage />
         </Route>
         <Route path="/allcountries" exact>
           <AllCountriesPage />

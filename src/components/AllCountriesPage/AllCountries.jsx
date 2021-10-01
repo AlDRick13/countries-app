@@ -7,7 +7,8 @@ const AllCountries = ({name, flag}) => {
     
     return (
         <div className="country-container1">
-            <h3>{name}</h3>
+            <h5>{name}</h5>
+            <hr />
             <img src={flag} alt={name} />
         </div>
     )

@@ -36,19 +36,7 @@ const CountryDetails = () => {
         <div className="country-details" >
             <Link to={`/`}><h4>Go back!</h4> </Link>
             <CountryInfo name={details[0].name.common} capital={details[0].capital} subregion={details[0].subregion} fullName={details[0].name.official} flag={details[0].flags[0]} />
-        </div>
-            )
-
-        
-        
-        // <h1>Hola</h1>
-        // <div className="country-container">
-        //     <h1>{details.name.common}</h1>
-        //     <img src={details.flags[0]} alt={details.name.common} />
-        //     <p>Capital: {details.capital[0]}</p>
-        //     <p>Official name: {details.name.official}</p>
-        //     <p>SubRegion: {details.subregion}</p>
-        // </div>
+        </div>)
     )
 }
 
