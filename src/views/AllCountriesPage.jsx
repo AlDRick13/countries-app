@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect, useRef} from 'react';
+import { useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import Loader from "../components/Loader";
 
@@ -13,7 +13,6 @@ const AllCountriesPage = () => {
     const [data, setData] = useState();
     const [loader, setLoader] = useState(false);
     const [n, setN] = useState(20);
-    const moreBtnRef = useRef()
 
     //funciones
     const handleFetchCountries = async () => {
